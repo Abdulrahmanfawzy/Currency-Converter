@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="shortcut icon" href="images/dollar.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <div class="container">
+        
+        
+        <h2>
+            Currency Converter
+        </h2>
+            <form>
+                <div class="box">
+                    <div>
+                        <label for="num">Amount</label>
+                        <input type="number" placeholder="$" id="num" min="1">
+                    </div>
+                    
+                    <div>
+                        <label for="select_from">From</label>
+                        <select id="select_from">
+                            
+                        </select>
+                    </div> 
+    
+                    <div class="convert">
+                        <img src="images/convert.png" alt="">
+                    </div>
+    
+                    <div>
+                        <label for="select_to">To</label>
+                        <select id="select_to">
+                        </select>
+                    </div>
+                </div>
+                <div class="convert_btn">
+                    <button>convert</button>
+                    <div class="result"></div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="spinner">
+        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
